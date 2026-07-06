@@ -1,0 +1,14 @@
+[2026-07-06T20:02:02Z INFO  app_lib::api::api] Found transcript config: provider=localWhisper, model=large-v3
+[2026-07-06T20:02:02Z INFO  app_lib::api::api] Found transcript config: provider=localWhisper, model=large-v3
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA GeForce RTX 5090 Laptop GPU, compute capability 12.0, VMM: yes
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load:    CUDA0 total size =  3094.36 MB
+[2026-07-06T20:04:07Z INFO  app_lib::whisper_engine::whisper_engine] Successfully loaded model: large-v3 with CUDA GPU with Flash Attention (Ultra-Fast) (Performance Tier: High, Beam Size: 3, Threads: Some(4))
+whisper_backend_init_gpu: using CUDA backend
+whisper_backend_init_gpu: using CUDA backend
+whisper_backend_init_gpu: using CUDA backend
+[2026-07-06T20:04:05Z INFO  app_lib::audio::import] Loading Whisper model 'large-v3' (current: None)
+[2026-07-06T20:04:38Z INFO  app_lib::audio::import] Transcription complete: 3 segments transcribed out of 3, avg confidence: 1.00

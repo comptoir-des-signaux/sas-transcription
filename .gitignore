@@ -1,0 +1,20 @@
+# Binaires lourds : vont en Releases GitHub, jamais dans l'arbre
+artefacts/
+*.deb
+*.AppImage
+*.bin
+*.gguf
+# Fixtures audio lourdes (garder seulement le clip 60s versionné explicitement via -f)
+demo/fixtures/*.wav
+!demo/fixtures/saint-nazaire_60s.wav
+# Divers : logs transitoires, mais on garde les logs de preuve du dossier demo/
+*.log
+!demo/*.log
+!demo/**/*.log
+__pycache__/
+
+# Enregistrements/transcriptions produits par l'appli au runtime
+meetily-recordings/
+
+# Docs de conception internes (spec + plan) : hors dépôt public
+docs/superpowers/
