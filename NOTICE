@@ -1,0 +1,11 @@
+sas-transcription
+Copyright (c) 2026 Comptoir des Signaux (Pascal Chevallot)
+
+Distribué sous licence EUPL-1.2 (voir le fichier LICENSE).
+
+Ce dépôt configure, installe et documente l'application Meetily
+(Zackriya-Solutions / meeting-minutes), distribuée sous licence MIT :
+https://github.com/Zackriya-Solutions/meeting-minutes
+Il ne redistribue ni le code source ni les binaires de Meetily.
+
+Modèle de transcription : Whisper (OpenAI), au format ggml via whisper.cpp.
