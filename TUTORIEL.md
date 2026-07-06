@@ -42,7 +42,9 @@ Dans un terminal Ubuntu (WSL) :
 bash /mnt/d/CascadeProjects/sas-transcription/scripts/01_install_cuda_runtime.sh
 ```
 
-Il ajoute le dépôt CUDA NVIDIA (`wsl-ubuntu`), installe `cuda-cudart-12` et `libcublas-12`, et les rend visibles par `ldconfig`. Doit finir par `Runtime CUDA pret dans /usr/local/cuda-12.x/...`.
+Il ajoute le dépôt CUDA NVIDIA (`wsl-ubuntu`), installe `cuda-cudart-12` et `libcublas-12` (pour la transcription whisper.cpp), plus `libgomp1` et `libnccl2` (dépendances du sidecar de résumé `llama-helper`), et les rend visibles par `ldconfig`. Doit finir par `Runtime CUDA pret dans /usr/local/cuda-12.x/...`.
+
+Note : sans `libgomp1` et `libnccl2`, la transcription fonctionne mais la génération de résumé échoue (`llama-helper` crashe au démarrage avec « error while loading shared libraries: libgomp.so.1 », l'application affiche « Failed to write request to stdin »).
 
 Vérification :
 
